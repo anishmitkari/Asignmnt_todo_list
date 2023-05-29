@@ -73,7 +73,11 @@ class ShowToDoNotesAdapter(private val mList: List<Todo_model>, context: Context
                 holder.txvg_status.setVisibility(View.VISIBLE)
 
             } else if (int < 0) {
-             } else {
+                holder.txvg_status.setVisibility(View.GONE)
+
+
+            } else {
+                holder.txvg_status.setVisibility(View.GONE)
 
             }
          }

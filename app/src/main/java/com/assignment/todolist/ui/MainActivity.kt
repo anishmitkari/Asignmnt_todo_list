@@ -115,8 +115,12 @@ class MainActivity : AppCompatActivity() {
                     Id, title, time, date, status
                 )
             )
-        }
 
+
+        }
+        val addTaskIntent = Intent(this@MainActivity, MainActivity::class.java)
+        startActivity(addTaskIntent)
+        finish()
     }
 //function to mark complete task
 
